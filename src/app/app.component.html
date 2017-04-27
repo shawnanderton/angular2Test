@@ -1,4 +1,20 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<div class="flexbox-parent">
+    <img src="../assets/images/logo.svg"/>
+    <div class="flexbox-item header">
+       <nav md-tab-nav-bar>
+  <a md-tab-link
+     [routerLink]="link"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    RouteSheet
+  </a>
+</nav>
+    </div>
+
+    <div class="flexbox-item fill-area content flexbox-item-grow">
+        <div class="fill-area-content flexbox-item-grow">
+            <aside></aside>
+            <content></content>
+        </div>
+    </div>
+</div>

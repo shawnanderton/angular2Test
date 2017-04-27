@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SideBarComponent } from 'app/side-bar/side-bar.component';
 
 const routes: Routes = [
   {
-    path: '',
-    children: []
+    path: 'side',
+    component: SideBarComponent
   }
 ];
 
