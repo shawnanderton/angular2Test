@@ -73,26 +73,42 @@ body {
 }
 
 #menu {
-    width: 4.5em;
+    flex: 0 0 4.5rem;
     height: 100%;
     border-right: 1px solid #cacaca;
 }
 
 #sidebar {
-    width: 20rem;
     border-left: 1px solid #cacaca;
+    flex: 0 0 15rem;
+    margin-left: auto;
 }
 
 content {
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex: 1 1 100%;
+    padding: 15px;
 }
 
 .example-card {
     margin: 2rem 5rem;
+    width: 100%;
 }
 
 nav {
     margin-left: 4.7em;
+}
+
+.pass {
+    background-color: green;
+}
+
+.caution {
+    background-color: yellow;
+}
+
+.fail {
+    background-color: red;
 }
